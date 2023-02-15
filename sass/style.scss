@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box ;}
+body {
+    margin: 0;
+}
+
+.side-background {
+    background: url('../../images/bg-main-desktop.png') center (center / cover) no-repeat;
+    width: 35vw;
+    height: 100vh;
+}
+
+.card__front {
+    position: fixed;
+    width: 400px;
+    height: 251px;
+    top: 20vh;
+    left: 17vw;
+    background: url('../../images/bg-card-front.png')center (center / cover) no-repeat;
+    border-radius: 3%;
+    padding: 20px;
+    padding-left: 27px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    &-circles {
+        display: flex;
+        justify-content: flex-end;
+    }
+    &-white {
+        height: 45px;
+        width: 45px;
+        border-radius: 100%;
+        background-color: aliceblue;
+    }
+    &-circle {
+        height: 22px;
+        width: 22px;
+        border-radius: 100%;
+        border: 1px solid;
+        border-color: white;
+        margin-top: 11px;
+        margin-left: 15px;
+    }
+    &-bank {
+        margin: auto;
+        margin-right: 165px;
+    }
+    &-nfcs {
+        display: flex;
+    }
+    &-chip {
+        margin-top: 15px;
+        height: 40px;
+        width: 40px;
+        img {
+            height: 40px;
+            width: 60px;
+        }
+    }
+    &-nfc {
+        margin-top: 15px;
+        height: 40px;
+        width: 40px;
+        img {
+            height: 40px;
+            width: 40px;
+            color: white;
+        }
+    }
+    &-numbers {
+        margin-top: 30px;
+        width: 300px;
+        align-self: center;
+        font-size: 32px;
+        color:whitesmoke;
+        letter-spacing: 1px;
+    }
+    &-bottom {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        color:azure
+    }
+}
+
+.card__back {
+    position: fixed;
+    width: 400px;
+    height: 251px;
+    top: 50vh;
+    left: 23vw;
+    background: url('../../images/bg-card-back.png')center (center / cover) no-repeat;
+    border-radius: 3%;
+    padding: 20px;
+    padding-left: 27px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    &-cvv{
+        font-size: 19px;
+        color: white;
+        margin-top: 92px;
+        margin-left: 310px;
+    }
+}
+
+.form__wrapper {
+    position: fixed;
+    width: 350px;
+    height: 450px;
+    top: 30vh;
+    left: 60vw;
+
+}
+
+.card__form {
+    &-name{
+        padding-top: 20px;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column-reverse;
+        input {
+            margin-top: 10px;
+            padding-left: 10px;
+            width: 100%;
+            height: 40px;
+            font-size: 16px;
+            border-radius:10px;
+            border-color: rgb(125, 44, 201);
+
+        }
+    }
+    &-cvv {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 15px;
+        text-transform: uppercase;
+        &-both {
+            display: flex;
+            flex-direction: row;
+            input {
+                height: 40px;
+                width: 71px;
+                margin-top: 10px;
+                padding-left: 10px;
+                font-size: 16px;
+                border-radius:10px;
+                border-color: rgb(125, 44, 201);
+
+            }
+        }
+        &-month {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        &-year {
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        &-cvv {
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column-reverse;
+            input {
+                height: 40px;
+                width: 160px;
+                margin-top: 10px;
+                padding-left: 10px;
+                font-size: 16px;
+                border-radius:10px;
+                border-color: rgb(125, 44, 201);
+
+            }
+        }
+    }
+    
+}
+
+.btn {
+    margin-top: 40px;
+    width: 100%;
+    height: 50px;
+    color: white;
+    background-color: black;
+    border-radius:10px;
+
+}
+
+input:invalid {
+    box-shadow: 0 0 5px 1px red;
+  }
+
+input:valid {
+    box-shadow: 0 0 5px 1px rgb(15, 165, 15);
+  }
+
+
+// input:invalid {
+//     background-color: #ffdddd;
+//   }
+  
+
+//   input:valid {
+//     background-color: #ddffdd;
+//   }
+  

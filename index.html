@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+  <div class="side-background"></div>
+  <div class="container">
+    <div class="card__front">
+      <div class="card__front-circles">
+        <div class="card__front-bank">ГАЗМЯСБАНК</div>
+        <div class="card__front-white"></div>
+        <div class="card__front-circle"></div>
+      </div>
+      <div class="card__front-nfcs">
+        <div class="card__front-nfc"> <img src="/images/contactless.png" alt="nfc"> </div>
+        <div class="card__front-chip"> <img src="/images/chip.png" alt="chip"></div>
+      </div>
+      <div class="card__front-numbers">  1488 1488 1488 1488</div>
+      <div class="card__front-bottom">
+        <div class="card__front-name">  Роман Кириловський</div>
+        <div class="card__front-date"><span class="month">14</span>/<span class="year">88</span>  </div>
+      </div>
+    </div>
+
+    <div class="card__back">
+      <div class="card__back-cvv">322</div>
+    </div>
+
+    <div class="form__wrapper">
+      <form action="#" class="card__form">
+        <div class="card__form-name">
+          <input placeholder=" Роман Кириловский" name="name" id="name" type="text" required="required" minlength="5" maxlength="20">
+          <label for="name">Имя владельца карты</label>
+        </div>
+        <div class="card__form-name">
+          <input placeholder = '1488 1488 1488 1488' name="number" id="number" type="text" required="required" minlength="15" maxlength="16">
+          <label for="name">Номер карты</label>
+        </div>
+        <div class="card__form-cvv">
+          <div class="card__form-cvv-both">
+            <div class="card__form-cvv-month">
+              <input placeholder="MM" name="month" id="month" type="text" required="required" minlength="2" maxlength="2">
+              <label for="name">годен до</label>
+            </div>
+            <div class="card__form-cvv-year">
+              <input placeholder="ГГ" name="year" id="year" type="text" required="required" minlength="2" maxlength="2">
+              <label for="name">(ММ / ГГ)</label>
+            </div>
+          </div>
+          <div class="card__form-cvv-cvv">
+            <input placeholder="322" name="cvc" id="cvc" type="text" required="required" minlength="3" maxlength="3">
+            <label for="name">CVV</label>
+          </div>
+  
+        </div>
+
+        <button class="btn">
+          Подтвердить
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Completed state start -->
+
+  Thank you!
+  We've added your card details
+  Continue
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
